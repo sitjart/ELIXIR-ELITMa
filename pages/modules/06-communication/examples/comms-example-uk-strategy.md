@@ -7,9 +7,11 @@ page_id: comm-ex-uk-strategy
 type: Real_world_example
 back_to: mod_comm_11
 sidebar: module-communication
+ref_to_main_resources:
+  - elixir-uk-comms-strategy
 ---
 
-A communications strategy is only worth the effort if it changes what you do on Monday. [ELIXIR-UK's strategy](https://elixir-europe.org/intranet/communication) is a good example of one built to be *used*, not filed away – and because it's published openly in the [ELIXIR-UK handbook](https://elixir-uk.github.io/handbook/communications-strategy) and maintained on [GitHub](https://github.com/elixir-uk/handbook), you can read the whole thing, reuse it or suggest changes.
+A communications strategy is only worth the effort if it changes what you do on Monday. ELIXIR-UK's strategy is a good example of one built to be *used*, not filed away – and because it's published openly in the [ELIXIR-UK handbook](https://elixir-uk.github.io/handbook/communications-strategy) and maintained on [GitHub](https://github.com/elixir-uk/handbook), you can read the whole thing, reuse it or suggest changes.
 
 {% include callout.html type="note" content="This is one Node's approach, shown for inspiration - not a template to copy wholesale. ELIXIR-UK structured theirs around a recognised national, government-recommended framework, and aligned it with the Hub's ELIXIR-STEERS toolkit. The transferable value is in how it's built, not the specific framework, which you should choose to fit your own national context." %}
 
