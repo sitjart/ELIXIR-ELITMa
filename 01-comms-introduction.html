@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Communication: Foundations of communication in research infrastructures | ELITMa – ELIXIR Training Programme in Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Communication is already happening in your Node – the question is whether it's working. Find out the answer and how to improve it.">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Communication: Foundations of communication in research infrastructures | ELITMa – ELIXIR Training Programme in Management" />
+    <meta property="og:description" content="Communication is already happening in your Node – the question is whether it's working. Find out the answer and how to improve it." />
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sitjart.github.io/ELIXIR-ELITMa/01-comms-introduction">
+    <meta property="og:image" content="//github.com/pages/sitjart/ELIXIR-ELITMa/assets/img/apple-touch-icon.png" />
+    <meta property="og:logo" content="//github.com/pages/sitjart/ELIXIR-ELITMa/assets/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Communication: Foundations of communication in research infrastructures | ELITMa – ELIXIR Training Programme in Management">
+    <meta name="theme-color" content="#">
+    <!-- Syntax highlighting  -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/syntax.css">
+    <!-- Country flags  -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/flag-icons.min.css">
+    <!-- Lucide icon font -->
+    <link rel="stylesheet" type="text/css" href="/ELIXIR-ELITMa/assets/css/lucide.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/ELIXIR-ELITMa/assets/css/all.min.css">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/main.css?1790772002">
+    <!-- Main font(s) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- JavaScript  -->
+    <script src="/ELIXIR-ELITMa/assets/js/jquery.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/lunr.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/anchor.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/toc.js?1790772002"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/main.js?1790772002"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/search.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/clipboard.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/custom.js?1790772002"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/ELIXIR-ELITMa/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ELIXIR-ELITMa/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ELIXIR-ELITMa/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/ELIXIR-ELITMa/assets/img/site.webmanifest">
+    <link rel="shortcut icon" href="/ELIXIR-ELITMa/assets/img/favicon.ico">
+    <!-- Schema.org metadata -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ELITMa – ELIXIR Training Programme in Management",
+        "url": "https://sitjart.github.io",
+        "about": "ELIXIR Training Programme in Management, supporting the planning and delivery of Node activities such as coordination, training, service provision, infrastructure management, events and communication."
+    }
+</script>
+
+</head>
+
+<body class="" data-bs-spy="scroll" data-bs-target="#toc-contents" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="p-2 text-center text-break bg-warning">
+    <small>ELITMa is currently under development and may change at any point - it is not meant for production use</small>
+</div>
+
+    
+    <!-- Navigation -->
+<header>
+    <a class="visually-hidden-focusable" href='#side-nav'>Skip to aside</a>
+    <a class="visually-hidden-focusable" href='#main'>Skip to content</a>
+    <a class="visually-hidden-focusable" href='#footer'>Skip to footer</a>
+    <nav class="navbar navbar-expand-lg mb-3 mb-lg-5 shadow-sm">
+        <div class="container g-lg-5">
+            <a class="navbar-brand flex-grow-1 overflow-x-auto" href="/ELIXIR-ELITMa/"><img class="img-fluid" alt="ELITMa – ELIXIR Training Programme in Management logo" src="/ELIXIR-ELITMa/assets/img/logos/main-logo-horizontal-light.svg"></a>
+            <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i title="navbar-toggler" class="icon-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav pt-3 pt-lg-0 pb-2 pb-lg-0 gap-2">
+                    <!-- navigation entries -->
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link ps-2 dropdown-toggle" href="#" id="Dropdown"Modules"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modules</a>
+                        <ul class="dropdown-menu" aria-labelledby="Dropdown"Modules"">
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/governance/">Intro to ELIXIR & Governance</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/data-management/">Node data management strategy</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/strategic-management/">Strategic management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/leading-teams/">Leading teams</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/elsi/">Legal & ethical</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/communication/">Communication</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/finance/">Finance</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/project-management/">Project management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/impact/">Impact</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/carbon-footprint/">Carbon footprint</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/events">Events</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/about">About</a>
+                    </li>
+                    <li class="nav-item nav-break" aria-hidden="true"></li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-2 d-flex align-items-center" href="https://github.com/sitjart/ELIXIR-ELITMa">
+                            <i class="fa-brands fa-github me-2"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    <!--start search-->
+                    <li class="nav-item d-lg-flex align-items-center">
+                        <div class="position-relative">
+                            <form role="search" class="input-group">
+                                <span class="input-group-text" id="search-label"><i class="icon-search"></i></span><input type="search" id="search-input" class="search-input form-control" tabindex="0" placeholder="Search..." aria-label="Search..." autocomplete="off">
+                            </form>
+                            <div id="search-results" class="search-results"></div>
+                        </div>
+                    </li>
+                    <!--end search-->
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+</header>
+
+    <!-- Page Content -->
+    <div class="container g-lg-5">
+        <!-- Content Row -->
+        <div id="layout" class="gap-5">
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <button class="btn text-start d-lg-none hover-primary collapsed sidebar-collapse w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#side-nav" aria-controls="side-nav" aria-expanded="true" aria-label="Toggle navigation">
+    Module-communication menu <i title="navbar-toggler" class="icon-menu ms-2"></i>
+</button>
+<nav class="collapse text-muted" id="side-nav" aria-label="Side navigation">
+    <div class="sidebar-title-wrapper pb-1 pt-2">
+        <a class="text-start d-block sidebar-title text-dark"href="/ELIXIR-ELITMa/modules/communication">Communication Module </a>
+    </div>
+    <ul id="sidebar-list-lvl-0"  class="list-unstyled mb-4">
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100 active" href="/ELIXIR-ELITMa/01-comms-introduction"><span class="sidebar-link-text">01 Foundations of communication in RIs</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/02-comms-audience"><span class="sidebar-link-text">02 Understanding your audience</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/03-comms-collaboration"><span class="sidebar-link-text">03 Collaboration and sharing</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/04-comms-ecosystem"><span class="sidebar-link-text">04 ELIXIR communications ecosystem</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/05-comms-accessibility"><span class="sidebar-link-text">05 Accessibility</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/06-comms-writing"><span class="sidebar-link-text">06 Writing for non-writers</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/07-comms-branding"><span class="sidebar-link-text">07 Branding</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/08-comms-design"><span class="sidebar-link-text">08 Graphic design for non-designers</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/09-comms-automation"><span class="sidebar-link-text">09 Automation and tools</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/10-comms-storytelling"><span class="sidebar-link-text">10 Storytelling and impact</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/11-comms-strategy"><span class="sidebar-link-text">11 Strategy canvas</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center mt-3">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/comms-all-resources"><span class="sidebar-link-text">All resources</span>
+</a>
+        </li>
+    </ul>
+</nav>
+
+            </aside>
+            <!-- Content -->
+            <main id="main" class="min-vh-100 add-grid">
+    <div id="intro">
+        
+<nav id="breadcrumb" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item mt-0">
+            <a href="/ELIXIR-ELITMa/" aria-label="Home"><i class="icon-house" aria-hidden="true"></i></a>
+        </li>
+        <li class="breadcrumb-item mt-0"><a href="/ELIXIR-ELITMa/modules">Modules</a></li>
+        <li class="breadcrumb-item mt-0"><a href="/ELIXIR-ELITMa/modules/communication/">Communication</a></li>
+        <li class="breadcrumb-item last mt-0" aria-current="page">Foundations of communication in research infrastructures</li>
+    </ol>
+</nav>
+        <h1>Foundations of communication in research infrastructures
+        
+<div id="edit-me" class="d-inline-flex align-items-center align-middle ms-2">
+    <a role="button" data-bs-toggle="tooltip"
+        title="Propose changes to the content of this page on GitHub"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/blob/gh-pages/pages/modules/06-communication/01-comms-introduction.md" class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i
+            class="icon-pencil"></i></a>
+    <a role="button" data-bs-toggle="tooltip" title="Report an issue"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/issues/new?title=Issue+on+page%3A+Foundations+of+communication+in+research+infrastructures&amp;body=I+would+like+to+report+an+issue+on+the+Foundations+of+communication+in+research+infrastructures+page+at+%60%2F01-comms-introduction%60.+Description+of+the+issue%3A"
+        class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i class="icon-circle-alert"></i></a>
+    <a role="button" data-bs-toggle="tooltip" title="Check out the history of this page"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/commits/gh-pages/pages/modules/06-communication/01-comms-introduction.md" class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i
+            class="icon-history"></i></a>
+</div>
+
+        </h1>
+        <div class="summary">Communication is already happening in your Node – the question is whether it's working. This chapter helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR and how to take stock of where your Node currently stands.</div>
+    </div>
+    <div id="toc" class="text-muted sticky-xl-top">
+<div id="page-img" class="d-flex flex-column"><div class="mb-4"><img src="/ELIXIR-ELITMa/images//icons/icon-module-communication.svg" alt="Page image" class="page-img-lg"/></div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    // Ensure that the TOC is generated after the document is fully loaded
+    $('#toc-contents').toc({
+      minimumHeaders: 1,
+      listType: 'ul',
+      classes: { list: 'list-unstyled mb-4' },
+      showSpeed: 0,
+      headers: 'main h2',
+      title: '<strong class="my-0 my-xl-2 pt-2 d-block text-dark">On this page</strong><hr class="mt-2">' 
+    });
+    // After generating the TOC, check the hash in the URL and scroll to the anchor if present
+    if (window.location.hash) {
+      var target = $(window.location.hash);
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 0);
+      }
+    }
+    // Allow the browser to handle the scrolling to the anchor
+    $('#toc-contents a').on('click', function (e) {
+      e.preventDefault(); // Prevent the default link click behavior
+
+      var target = this.hash; // Get the hash (e.g., #heading-id)
+      var $target = $(target); // Find the element with the corresponding ID
+
+      if ($target.length) {
+        // Change the URL hash
+        window.location.hash = target;
+      }
+    });
+
+  });
+</script>
+<button id="btn-toc-hide" class="btn bg-light me-auto d-xl-none hover-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#toc-contents" aria-expanded="true" aria-controls="toc-contents">
+  <i class="icon-panel-top-open me-2"></i>On this page
+</button>
+<nav id="toc-contents" class="collapse" aria-label="Table of contents"></nav>
+
+
+    </div>
+    <div id="content" class="mb-5">
+        
+<div class="module-metadata my-4">
+  <nav>
+    <div class="nav nav-tabs" role="tablist">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-general"
+        type="button"
+        role="tab">
+        General
+      </button>
+
+      <button
+        class="nav-link"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-outcomes"
+        type="button"
+        role="tab">
+        Learning outcomes
+      </button>
+    </div>
+  </nav>
+
+  <div class="tab-content border border-top-0 p-3">
+
+    <!-- General tab -->
+    <div class="tab-pane show active" id="module-meta-general" role="tabpanel">
+      <div class="d-flex flex-wrap gap-4 py-2"><div class="border-start ps-3">
+          <div class="small text-muted module-meta-label">
+            <i class="fa-solid fa-clock me-1"></i>Time to complete
+          </div>
+          <span>10 minutes</span>
+        </div><div class="border-start ps-3">
+          <div class="small text-muted module-meta-label">
+            <i class="fa-solid fa-users me-1"></i>Primary audience
+          </div>
+          <span>Node Coordinators, Project Managers, Communications Officers</span>
+        </div></div>
+    </div>
+
+    <!-- Learning outcomes tab -->
+    <div class="tab-pane" id="module-meta-outcomes" role="tabpanel"><ol class="mb-0"><li class="mb-2">Distinguish between internal and external communication and identify which applies to a given situation in your Node</li><li class="mb-2">Recognise communication as a shared responsibility across all roles, not just dedicated comms staff</li><li class="mb-2">Audit your Node's current communication practices against a simple five-point framework</li></ol></div>
+
+  </div>
+</div>
+<p>You may not have “communications” in your job title. But if you coordinate a project, lead a work package, manage a team or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.</p>
+
+<p>In a distributed network like ELIXIR, where Nodes operate across different countries, cultures and institutional contexts, communication is the connective tissue. When it works well, it’s invisible. When it doesn’t, the costs are real: duplicated effort, missed opportunities, missed authority in research grants, misaligned expectations and outputs that never reach the people who needed them.</p>
+
+<p>This module won’t turn you into a communications expert. It will help you communicate more deliberately – and know when to ask for help.</p>
+
+<h2 id="internal-vs-external-two-different-jobs">Internal vs external: two different jobs</h2>
+<p>All communication in ELIXIR falls into one of two categories, and confusing them is one of the most common mistakes:</p>
+
+<ul>
+  <li><strong>Internal communication</strong> is the flow of information within your Node or across the consortium — project updates, shared decisions, meeting outputs, cross-Node coordination. Its goal is alignment. When it fails, people duplicate work, miss deadlines or pull in different directions.</li>
+  <li><strong>External communication</strong> is how you present your work to the world – to funders, policymakers, researchers outside ELIXIR and the public. Its goal is impact. When it fails, good work goes unnoticed and opportunities are missed.</li>
+</ul>
+
+<p>The same output often needs both. A new service your Node launches needs internal communication so the consortium knows about it – and external communication so potential users find it or to gain visibility for funding and sustainability.</p>
+
+<div class="callout callout--note" role="alert">
+  <div class="callout__heading">Note</div>
+  <div class="callout__content">
+    <p>Node Coordinators, Work Package Leads, Task Leads and any other coordination roles within the consortium play a key role in shaping the communication culture, especially for internal communication.</p>
+  </div>
+</div>
+
+<h2 id="a-scenario-youll-recognise">A scenario you’ll recognise</h2>
+
+<p>Two Work Package leads in a multi-Node project each spent months producing what turned out to be near-identical outputs. Neither knew the other was doing it. There was no shared update mechanism, no agreed communication touchpoint and no moment where someone asked: who else needs to know what we’re doing?</p>
+
+<p>This isn’t rare. It’s the default when communication is treated as something that happens after the work, rather than alongside it.</p>
+
+<div class="callout callout--tip" role="alert">
+  <div class="callout__heading">Tip</div>
+  <div class="callout__content">
+    <p>Considering communication strategies before a project begins is the first step towards avoiding duplicated efforts and team misalignment. Considering which outputs will be relevant to people outside the project will also position your work as a success for future funding avenues for your Node and the consortium at large.</p>
+  </div>
+</div>
+
+<div class="exercise-box">
+  <h2 id="quick-exercise-your-communication-audit">Quick exercise: your communication audit</h2>
+
+  <p>Reflect on a current or recent project and tick what’s true today.</p>
+
+  <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Do all active members know where to find the latest updates?</li>
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Do we regularly share who is doing what?</li>
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Have I identified which outputs are worth communicating beyond the project team?</li>
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Is there a clear process for sharing successes and lessons learned?</li>
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Are our members aware of current objectives?</li>
+    <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Are the channels I’m using actually working?</li>
+  </ul>
+
+  <div class="callout callout--warning" role="alert">
+  <div class="callout__heading">Warning</div>
+  <div class="callout__content">
+    <p>If you didn’t tick four or more, this module is definitely for you – keep going.</p>
+  </div>
+</div>
+
+</div>
+
+<h2 id="whats-next">What’s next</h2>
+
+<p>Communicating research and, in particular, inside research infrastructures, is complex, but the end communications piece should not reflect that complexity.</p>
+
+<p>This short module will help you understand how to take action on some of the easy steps and give you cues for ELIXIR-specific applications.</p>
+
+<div class="callout callout--tip" role="alert">
+  <div class="callout__heading">Tip</div>
+  <div class="callout__content">
+    <p>If you want to delve deeper than this module, there are numerous resources you can use to communicate more clearly. Use the tools and resources tables provided at the end of each page.</p>
+  </div>
+</div>
+
+
+
+        
+
+        
+
+<h2 class="further-resources-heading">Further resources</h2>
+<div class="table-responsive further-resources-table">
+    <table class="tooltable table display">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Resource</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="further-resources-category">
+                    <span class="badge">External resource</span>
+                </td>
+                <td>
+                    <a href="https://eic.ec.europa.eu/communication-toolkit_en">Communication Toolkit for European Projects</a>
+                </td>
+                <td><p>The European Innovation Council’s communication toolkit for EU-funded projects - guidance and templates for communication and visibility, including how to acknowledge EU funding correctly.</p>
+</td>
+            </tr>
+            <tr>
+                <td class="further-resources-category">
+                    <span class="badge">External resource</span>
+                </td>
+                <td>
+                    <a href="https://ri-vis.eu/network/rivis/news/launch-of-communication-toolkit-for-research-infrastructures/">Communication Toolkit for Research Infrastructures</a>
+                </td>
+                <td><p>Practical toolkit from the RI-VIS project on communicating research infrastructures to new audiences - stakeholder mapping, messaging, channels and evaluation, with templates and case studies.</p>
+</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<nav id="pathway-bar" class="module-pager pathway-bar" aria-label="Your learning pathway" hidden></nav><nav class="module-pager module-pager--chapters" aria-label="Module chapters">
+  <p class="visually-hidden">Chapter 1 of 11</p>
+  <ol class="chapter-stepper" data-sidebar="module-communication">
+    <li><a class="chapter-step is-current" href="/ELIXIR-ELITMa/01-comms-introduction" data-url="/ELIXIR-ELITMa/01-comms-introduction" title="01 Foundations of communication in RIs" aria-current="step"><span class="visually-hidden">Chapter </span>1<span class="visually-hidden">: Foundations of communication in RIs</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/02-comms-audience" data-url="/ELIXIR-ELITMa/02-comms-audience" title="02 Understanding your audience"><span class="visually-hidden">Chapter </span>2<span class="visually-hidden">: Understanding your audience</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/03-comms-collaboration" data-url="/ELIXIR-ELITMa/03-comms-collaboration" title="03 Collaboration and sharing"><span class="visually-hidden">Chapter </span>3<span class="visually-hidden">: Collaboration and sharing</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/04-comms-ecosystem" data-url="/ELIXIR-ELITMa/04-comms-ecosystem" title="04 ELIXIR communications ecosystem"><span class="visually-hidden">Chapter </span>4<span class="visually-hidden">: ELIXIR communications ecosystem</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/05-comms-accessibility" data-url="/ELIXIR-ELITMa/05-comms-accessibility" title="05 Accessibility"><span class="visually-hidden">Chapter </span>5<span class="visually-hidden">: Accessibility</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/06-comms-writing" data-url="/ELIXIR-ELITMa/06-comms-writing" title="06 Writing for non-writers"><span class="visually-hidden">Chapter </span>6<span class="visually-hidden">: Writing for non-writers</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/07-comms-branding" data-url="/ELIXIR-ELITMa/07-comms-branding" title="07 Branding"><span class="visually-hidden">Chapter </span>7<span class="visually-hidden">: Branding</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/08-comms-design" data-url="/ELIXIR-ELITMa/08-comms-design" title="08 Graphic design for non-designers"><span class="visually-hidden">Chapter </span>8<span class="visually-hidden">: Graphic design for non-designers</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/09-comms-automation" data-url="/ELIXIR-ELITMa/09-comms-automation" title="09 Automation and tools"><span class="visually-hidden">Chapter </span>9<span class="visually-hidden">: Automation and tools</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/10-comms-storytelling" data-url="/ELIXIR-ELITMa/10-comms-storytelling" title="10 Storytelling and impact"><span class="visually-hidden">Chapter </span>10<span class="visually-hidden">: Storytelling and impact</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/11-comms-strategy" data-url="/ELIXIR-ELITMa/11-comms-strategy" title="11 Strategy canvas"><span class="visually-hidden">Chapter </span>11<span class="visually-hidden">: Strategy canvas</span></a></li>
+    <li><a class="chapter-step chapter-step--finish" href="/ELIXIR-ELITMa/modules/communication/" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li>
+  </ol>
+  <div class="module-pager-links">
+    <a class="module-pager-link module-pager-link--next" href="/ELIXIR-ELITMa/02-comms-audience">
+      <span class="module-pager-text"><span class="module-pager-label">Next chapter</span><span class="module-pager-title">02 Understanding your audience</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</nav><script type="application/json" id="pathway-data">
+{
+  "key": "pathway-module-communication",
+  "overview": "/ELIXIR-ELITMa/modules/communication/",
+  "paths": {
+    "new-to-comms": {
+      "title": "New to communications",
+      "steps": [{"url": "/ELIXIR-ELITMa/01-comms-introduction", "title": "01 Foundations of communication in RIs"},{"url": "/ELIXIR-ELITMa/02-comms-audience", "title": "02 Understanding your audience"},{"url": "/ELIXIR-ELITMa/06-comms-writing", "title": "06 Writing for non-writers"}]
+    },
+    "new-to-elixir": {
+      "title": "New to ELIXIR",
+      "steps": [{"url": "/ELIXIR-ELITMa/03-comms-collaboration", "title": "03 Collaboration and sharing"},{"url": "/ELIXIR-ELITMa/04-comms-ecosystem", "title": "04 ELIXIR communications ecosystem"}]
+    },
+    "making-materials": {
+      "title": "Making materials this week",
+      "steps": [{"url": "/ELIXIR-ELITMa/05-comms-accessibility", "title": "05 Accessibility"},{"url": "/ELIXIR-ELITMa/07-comms-branding", "title": "07 Branding"},{"url": "/ELIXIR-ELITMa/08-comms-design", "title": "08 Graphic design for non-designers"}]
+    },
+    "planning-reporting": {
+      "title": "Planning or reporting",
+      "steps": [{"url": "/ELIXIR-ELITMa/02-comms-audience", "title": "02 Understanding your audience"},{"url": "/ELIXIR-ELITMa/10-comms-storytelling", "title": "10 Storytelling and impact"},{"url": "/ELIXIR-ELITMa/11-comms-strategy", "title": "11 Strategy canvas"}]
+    }
+  }
+}
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.getElementById('pathway-data');
+    if (!el) return;
+    var data = JSON.parse(el.textContent);
+    var store = {
+      get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+      set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+      del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+    };
+
+    // ?path=<id> starts (or switches) a pathway; ?path=none leaves it.
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = params.get('path');
+    if (fromUrl === 'none') { store.del(data.key); store.del(data.key + '-next'); }
+    else if (fromUrl && data.paths[fromUrl]) { store.set(data.key, fromUrl); }
+
+    var id = store.get(data.key);
+    var path = id && data.paths[id];
+    if (!path) return;
+
+    var clean = function (u) { return u.replace(/\.html$/, '').replace(/\/$/, ''); };
+    var here = clean(window.location.pathname);
+    var idx = -1;
+    path.steps.forEach(function (s, i) { if (clean(s.url) === here) idx = i; });
+    var total = path.steps.length;
+    var link = function (s) { return s.url + '?path=' + id; };
+    var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+
+    // Same parts as the normal navigation - the row of circles, then previous/next cards -
+    // for the pathway's steps only, on a highlighted (orange) panel.
+    var arrowL = '<i class="fa-solid fa-arrow-left me-1" aria-hidden="true"></i>';
+    var nextCard = function (href, label, title, icon) {
+      return '<a class="module-pager-link module-pager-link--next" href="' + href + '"><span class="module-pager-text"><span class="module-pager-label">' + label + '</span><span class="module-pager-title">' + esc(title) + '</span></span><span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-' + icon + '"></i></span></a>';
+    };
+    var html = '<p class="pathway-bar-label"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Your pathway: <b>' + esc(path.title) + '</b>' +
+      (idx >= 0 ? ' <span class="pathway-bar-count">· step ' + (idx + 1) + ' of ' + total + '</span>' : '') +
+      '</span><button type="button" class="pathway-leave">Leave pathway</button></p>';
+    if (idx >= 0) {
+      html += '<ol class="chapter-stepper chapter-stepper--pathway">';
+      path.steps.forEach(function (s, i) {
+        html += '<li><a href="' + link(s) + '" class="chapter-step' + (i < idx ? ' is-visited' : '') + (i === idx ? ' is-current' : '') + '" title="' + esc(s.title) + '"' + (i === idx ? ' aria-current="step"' : '') + '><span class="visually-hidden">Step ' + (i + 1) + ': </span>' + parseInt(s.title.slice(0, 2), 10) + '</a></li>';
+      });
+      html += '<li><a class="chapter-step chapter-step--finish' + (idx === total - 1 ? ' is-visited' : '') + '" href="' + data.overview + '" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li></ol>';
+    }
+
+    var next = null;
+    html += '<div class="module-pager-links">';
+    if (idx > 0) {
+      var prev = path.steps[idx - 1];
+      html += '<a class="module-pager-link module-pager-link--prev" href="' + link(prev) + '"><span class="module-pager-label">' + arrowL + 'Previous in your pathway</span><span class="module-pager-title">' + esc(prev.title) + '</span></a>';
+    }
+    if (idx >= 0 && idx < total - 1) {
+      next = path.steps[idx + 1];
+      html += nextCard(link(next), 'Next in your pathway', next.title, 'arrow-right');
+    } else if (idx === total - 1) {
+      html += nextCard(data.overview, 'Pathway complete', 'Back to the overview to choose another', 'trophy');
+    } else {
+      // Off the pathway: offer to go back to where they left off.
+      var resume = store.get(data.key + '-next') || path.steps[0].url;
+      var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
+      html += nextCard(link(step), 'Back to your pathway', step.title, 'arrow-right');
+    }
+    html += '</div>';
+
+    // Remember where to resume (used by "Continue this pathway" on the main page).
+    if (idx >= 0) store.set(data.key + '-next', next ? next.url : path.steps[0].url);
+
+    var bar = document.getElementById('pathway-bar');
+    bar.innerHTML = html;
+    bar.hidden = false;
+    document.body.classList.add('on-pathway');
+    bar.querySelector('.pathway-leave').addEventListener('click', function () {
+      store.del(data.key); store.del(data.key + '-next');
+      bar.hidden = true;
+      document.body.classList.remove('on-pathway');
+      if (fromUrl) { params.delete('path'); history.replaceState(null, '', window.location.pathname + (params.toString() ? '?' + params : '') + window.location.hash); }
+    });
+  });
+</script>
+
+<script>
+  // Chapter circles: remember which chapters this reader has opened (this browser only)
+  // and give those circles a ring; the trophy lights up when every chapter has been visited.
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepper = document.querySelector('.chapter-stepper[data-sidebar]');
+    if (!stepper) return;
+    var key = 'visited-' + stepper.getAttribute('data-sidebar');
+    var visited = [];
+    try { visited = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    var current = stepper.querySelector('.is-current');
+    if (current && visited.indexOf(current.getAttribute('data-url')) === -1) {
+      visited.push(current.getAttribute('data-url'));
+      try { localStorage.setItem(key, JSON.stringify(visited)); } catch (e) {}
+    }
+    var steps = stepper.querySelectorAll('.chapter-step[data-url]'), all = true;
+    steps.forEach(function (a) {
+      if (visited.indexOf(a.getAttribute('data-url')) !== -1) a.classList.add('is-visited'); else all = false;
+    });
+    if (all) stepper.querySelector('.chapter-step--finish').classList.add('is-visited');
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#content .task-list-item input[type="checkbox"]').forEach(function (cb, i) {
+      var key = 'task-' + window.location.pathname + '-' + i;
+      cb.removeAttribute('disabled');
+      try { cb.checked = localStorage.getItem(key) === 'true'; } catch (e) {}
+      cb.addEventListener('change', function () {
+        try { localStorage.setItem(key, cb.checked); } catch (e) {}
+      });
+    });
+  });
+</script>
+
+
+
+        
+
+        
+
+        
+        
+
+    </div>
+</main>
+
+        </div>
+    </div>
+    
+<button id="back-to-top" class="btn btn-primary btn-sm rounded-pill" type="button" aria-label="Back to top" onclick="topFunction()">
+    <i class="icon-arrow-up" aria-hidden="true"></i><span class="visually-hidden">Back to top</span>
+</button>
+
+    
+<footer id="footer">
+    <div class="container py-4 g-lg-5">
+        <div class="row g-4 d-flex justify-content-between">
+            <div class="col-6 col-lg-6 d-flex justify-content-lg-start">
+                <p>By the Nodes, for the Nodes.<br />
+Building ELIXIR management capacity.</p>
+
+            </div>
+            <div class="col-6 col-lg-2 d-flex justify-content-lg-center">
+                <div>
+                    <span class="footer-title">MODULES</span>
+                    <ul class="mb-0 list-unstyled">
+                        <li><a href="/ELIXIR-ELITMa/modules/governance/">Intro to ELIXIR & Governance</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/data-management/">Node data management strategy</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/strategic-management/">Strategic management</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/leading-teams/">Leading teams</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/elsi/">Legal & ethical</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/communication/">Communication</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/finance/">Finance</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/project-management/">Project management</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/impact/">Impact</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/carbon-footprint/">Carbon footprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 d-flex justify-content-lg-end">
+                <div>
+                    <span class="footer-title">ABOUT</span>
+                    <ul class="mb-0 list-unstyled">
+                        <li><a href="/ELIXIR-ELITMa/about">About ELITMa</a></li>
+                        <li><a href="/ELIXIR-ELITMa/how-to-use">How to use ELITMa</a></li>
+                        <li><a href="/ELIXIR-ELITMa/how-to-contribute">How to contribute</a></li>
+                        <li><a href="/ELIXIR-ELITMa/site-components">Site components</a></li>
+                        <li><a href="/ELIXIR-ELITMa/contributors">See the people behind ELITMa</a></li>
+                        <li><a href="https://elixir-europe.org/platforms/training/elitma">Find out about the programme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-4">
+        <div class="container g-lg-5 d-flex justify-content-between flex-column flex-lg-row">
+            <div class="d-flex align-items-center mb-3 mb-lg-0 mx-auto mx-lg-0 text-center"><p>Copyright notice</p>
+</div>
+            <div class="d-flex align-items-center mx-auto ms-lg-4 me-lg-0">
+                <a id="ett-logo" class="text-nowrap me-lg-5 me-xxlg-0" href="https://elixir-belgium.github.io/elixir-toolkit-theme">Built with
+                    <svg data-name="ETT logo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 77.2 77.12">
+                        <defs>
+                            <style>
+                                .cls-2,
+                                .cls-3 {
+                                    fill: #fff;
+                                    pointer-events: none;
+                                }
+
+                                .cls-2 {
+                                    opacity: 0.18;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <circle class="cls-1" cx="38.56" cy="38.56" r="38.56" />
+                            <path class="cls-2" d="M9,48.08a44.19,44.19,0,0,0,4.68,19.84A38.56,38.56,0,1,0,55.16,3.72c-.59,0-1.19-.05-1.79-.05A44.4,44.4,0,0,0,9,48.08Z" />
+                            <path class="cls-3" d="M54,20.52H13.64a.85.85,0,0,0-.84.85v34a.84.84,0,0,0,.84.84H30a.84.84,0,0,0,.85-.84V51.16a.85.85,0,0,0-.85-.85H20.07a.85.85,0,0,1-.85-.85V42a.85.85,0,0,1,.85-.84h8.66a.85.85,0,0,0,.85-.85V36.06a.85.85,0,0,0-.85-.85H20.07a.85.85,0,0,1-.85-.84V27.29a.85.85,0,0,1,.85-.85H38.26a.85.85,0,0,1,.85.85V55.38a.84.84,0,0,0,.85.84h4.73a.84.84,0,0,0,.85-.84V27.29a.85.85,0,0,1,.84-.85H61.27a.85.85,0,0,1,.84.85V55.38a.84.84,0,0,0,.85.84h4.73a.84.84,0,0,0,.85-.84V27.29a.85.85,0,0,1,.85-.85h6.77a.84.84,0,0,0,.84-.85V21.37a.84.84,0,0,0-.84-.85Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>

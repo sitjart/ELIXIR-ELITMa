@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Management: Understanding your Node context | ELITMa – ELIXIR Training Programme in Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Understand your Node context by mapping governance, services and stakeholders involved in data management activities.">
+    <meta name="keywords" content="dm-ex-distributed-support, From distributed support to coordinated RDM services, dm-ex-roles-competences, Roles, competences and your Node team">
+    <meta property="og:title" content="Data Management: Understanding your Node context | ELITMa – ELIXIR Training Programme in Management" />
+    <meta property="og:description" content="Understand your Node context by mapping governance, services and stakeholders involved in data management activities." />
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sitjart.github.io/ELIXIR-ELITMa/02-dm-node-context">
+    <meta property="og:image" content="//github.com/pages/sitjart/ELIXIR-ELITMa/assets/img/apple-touch-icon.png" />
+    <meta property="og:logo" content="//github.com/pages/sitjart/ELIXIR-ELITMa/assets/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Data Management: Understanding your Node context | ELITMa – ELIXIR Training Programme in Management">
+    <meta name="theme-color" content="#">
+    <!-- Syntax highlighting  -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/syntax.css">
+    <!-- Country flags  -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/flag-icons.min.css">
+    <!-- Lucide icon font -->
+    <link rel="stylesheet" type="text/css" href="/ELIXIR-ELITMa/assets/css/lucide.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/ELIXIR-ELITMa/assets/css/all.min.css">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="/ELIXIR-ELITMa/assets/css/main.css?1790772002">
+    <!-- Main font(s) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- JavaScript  -->
+    <script src="/ELIXIR-ELITMa/assets/js/jquery.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/lunr.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/anchor.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/toc.js?1790772002"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/main.js?1790772002"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/search.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/clipboard.min.js"></script>
+    <script src="/ELIXIR-ELITMa/assets/js/custom.js?1790772002"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/ELIXIR-ELITMa/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ELIXIR-ELITMa/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ELIXIR-ELITMa/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/ELIXIR-ELITMa/assets/img/site.webmanifest">
+    <link rel="shortcut icon" href="/ELIXIR-ELITMa/assets/img/favicon.ico">
+    <!-- Schema.org metadata -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ELITMa – ELIXIR Training Programme in Management",
+        "url": "https://sitjart.github.io",
+        "about": "ELIXIR Training Programme in Management, supporting the planning and delivery of Node activities such as coordination, training, service provision, infrastructure management, events and communication."
+    }
+</script>
+
+</head>
+
+<body class="" data-bs-spy="scroll" data-bs-target="#toc-contents" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="p-2 text-center text-break bg-warning">
+    <small>ELITMa is currently under development and may change at any point - it is not meant for production use</small>
+</div>
+
+    
+    <!-- Navigation -->
+<header>
+    <a class="visually-hidden-focusable" href='#side-nav'>Skip to aside</a>
+    <a class="visually-hidden-focusable" href='#main'>Skip to content</a>
+    <a class="visually-hidden-focusable" href='#footer'>Skip to footer</a>
+    <nav class="navbar navbar-expand-lg mb-3 mb-lg-5 shadow-sm">
+        <div class="container g-lg-5">
+            <a class="navbar-brand flex-grow-1 overflow-x-auto" href="/ELIXIR-ELITMa/"><img class="img-fluid" alt="ELITMa – ELIXIR Training Programme in Management logo" src="/ELIXIR-ELITMa/assets/img/logos/main-logo-horizontal-light.svg"></a>
+            <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i title="navbar-toggler" class="icon-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav pt-3 pt-lg-0 pb-2 pb-lg-0 gap-2">
+                    <!-- navigation entries -->
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link ps-2 dropdown-toggle" href="#" id="Dropdown"Modules"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modules</a>
+                        <ul class="dropdown-menu" aria-labelledby="Dropdown"Modules"">
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/governance/">Intro to ELIXIR & Governance</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/data-management/">Node data management strategy</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/strategic-management/">Strategic management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/leading-teams/">Leading teams</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/elsi/">Legal & ethical</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/communication/">Communication</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/finance/">Finance</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/project-management/">Project management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/impact/">Impact</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/ELIXIR-ELITMa/modules/carbon-footprint/">Carbon footprint</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/events">Events</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ps-2" href="/ELIXIR-ELITMa/about">About</a>
+                    </li>
+                    <li class="nav-item nav-break" aria-hidden="true"></li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-2 d-flex align-items-center" href="https://github.com/sitjart/ELIXIR-ELITMa">
+                            <i class="fa-brands fa-github me-2"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    <!--start search-->
+                    <li class="nav-item d-lg-flex align-items-center">
+                        <div class="position-relative">
+                            <form role="search" class="input-group">
+                                <span class="input-group-text" id="search-label"><i class="icon-search"></i></span><input type="search" id="search-input" class="search-input form-control" tabindex="0" placeholder="Search..." aria-label="Search..." autocomplete="off">
+                            </form>
+                            <div id="search-results" class="search-results"></div>
+                        </div>
+                    </li>
+                    <!--end search-->
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+</header>
+
+    <!-- Page Content -->
+    <div class="container g-lg-5">
+        <!-- Content Row -->
+        <div id="layout" class="gap-5">
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <button class="btn text-start d-lg-none hover-primary collapsed sidebar-collapse w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#side-nav" aria-controls="side-nav" aria-expanded="true" aria-label="Toggle navigation">
+    Module-data-management menu <i title="navbar-toggler" class="icon-menu ms-2"></i>
+</button>
+<nav class="collapse text-muted" id="side-nav" aria-label="Side navigation">
+    <div class="sidebar-title-wrapper pb-1 pt-2">
+        <a class="text-start d-block sidebar-title text-dark"href="/ELIXIR-ELITMa/modules/data-management">Data Management Module </a>
+    </div>
+    <ul id="sidebar-list-lvl-0"  class="list-unstyled mb-4">
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/01-dm-intro"><span class="sidebar-link-text">01 Why a Node data management strategy</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100 active" href="/ELIXIR-ELITMa/02-dm-node-context"><span class="sidebar-link-text">02 Understanding your Node context</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/03-dm-content"><span class="sidebar-link-text">03 What to include</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/04-dm-assess"><span class="sidebar-link-text">04 Assessing where you are</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/05-dm-direction"><span class="sidebar-link-text">05 Deciding where you want to go</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/06-dm-plan"><span class="sidebar-link-text">06 Turning direction into a plan</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/07-dm-sustain"><span class="sidebar-link-text">07 Keeping the strategy alive</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center mt-3">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/dm-all-examples"><span class="sidebar-link-text">All examples</span>
+</a>
+        </li>
+        <li class="d-flex align-items-center">
+            <a class="text-start w-100" href="/ELIXIR-ELITMa/dm-all-resources"><span class="sidebar-link-text">All resources</span>
+</a>
+        </li>
+    </ul>
+</nav>
+
+            </aside>
+            <!-- Content -->
+            <main id="main" class="min-vh-100 add-grid">
+    <div id="intro">
+        
+<nav id="breadcrumb" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item mt-0">
+            <a href="/ELIXIR-ELITMa/" aria-label="Home"><i class="icon-house" aria-hidden="true"></i></a>
+        </li>
+        <li class="breadcrumb-item mt-0"><a href="/ELIXIR-ELITMa/modules">Modules</a></li>
+        <li class="breadcrumb-item mt-0"><a href="/ELIXIR-ELITMa/modules/data-management/">Data Management</a></li>
+        <li class="breadcrumb-item last mt-0" aria-current="page">Understanding your Node context</li>
+    </ol>
+</nav>
+        <h1>Understanding your Node context
+        
+<div id="edit-me" class="d-inline-flex align-items-center align-middle ms-2">
+    <a role="button" data-bs-toggle="tooltip"
+        title="Propose changes to the content of this page on GitHub"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/blob/gh-pages/pages/modules/02-data-management/02-dm-node-context.md" class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i
+            class="icon-pencil"></i></a>
+    <a role="button" data-bs-toggle="tooltip" title="Report an issue"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/issues/new?title=Issue+on+page%3A+Understanding+your+Node+context&amp;body=I+would+like+to+report+an+issue+on+the+Understanding+your+Node+context+page+at+%60%2F02-dm-node-context%60.+Description+of+the+issue%3A"
+        class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i class="icon-circle-alert"></i></a>
+    <a role="button" data-bs-toggle="tooltip" title="Check out the history of this page"
+        href="https://github.com/sitjart/ELIXIR-ELITMa/commits/gh-pages/pages/modules/02-data-management/02-dm-node-context.md" class="btn btn-sm btn-icon-round rounded-circle p-0 d-inline-flex align-items-center justify-content-center"><i
+            class="icon-history"></i></a>
+</div>
+
+        </h1>
+        <div class="summary">This chapter helps you build a shared understanding of your Node context by mapping governance, services, expertise, connections and gaps. It also guides you in forming an initial team and agreeing on a practical way to begin developing your data management strategy.</div>
+    </div>
+    <div id="toc" class="text-muted sticky-xl-top">
+<div id="page-img" class="d-flex flex-column"><div class="mb-4"><img src="/ELIXIR-ELITMa/images//icons/icon-module-data-management.svg" alt="Page image" class="page-img-lg"/></div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    // Ensure that the TOC is generated after the document is fully loaded
+    $('#toc-contents').toc({
+      minimumHeaders: 1,
+      listType: 'ul',
+      classes: { list: 'list-unstyled mb-4' },
+      showSpeed: 0,
+      headers: 'main h2',
+      title: '<strong class="my-0 my-xl-2 pt-2 d-block text-dark">On this page</strong><hr class="mt-2">' 
+    });
+    // After generating the TOC, check the hash in the URL and scroll to the anchor if present
+    if (window.location.hash) {
+      var target = $(window.location.hash);
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 0);
+      }
+    }
+    // Allow the browser to handle the scrolling to the anchor
+    $('#toc-contents a').on('click', function (e) {
+      e.preventDefault(); // Prevent the default link click behavior
+
+      var target = this.hash; // Get the hash (e.g., #heading-id)
+      var $target = $(target); // Find the element with the corresponding ID
+
+      if ($target.length) {
+        // Change the URL hash
+        window.location.hash = target;
+      }
+    });
+
+  });
+</script>
+<button id="btn-toc-hide" class="btn bg-light me-auto d-xl-none hover-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#toc-contents" aria-expanded="true" aria-controls="toc-contents">
+  <i class="icon-panel-top-open me-2"></i>On this page
+</button>
+<nav id="toc-contents" class="collapse" aria-label="Table of contents"></nav>
+
+
+    </div>
+    <div id="content" class="mb-5">
+        
+<div class="module-metadata my-4">
+  <nav>
+    <div class="nav nav-tabs" role="tablist">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-general"
+        type="button"
+        role="tab">
+        General
+      </button>
+
+      <button
+        class="nav-link"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-outcomes"
+        type="button"
+        role="tab">
+        Learning outcomes
+      </button>
+    </div>
+  </nav>
+
+  <div class="tab-content border border-top-0 p-3">
+
+    <!-- General tab -->
+    <div class="tab-pane show active" id="module-meta-general" role="tabpanel">
+      <div class="d-flex flex-wrap gap-4 py-2"><div class="border-start ps-3">
+          <div class="small text-muted module-meta-label">
+            <i class="fa-solid fa-clock me-1"></i>Time to complete
+          </div>
+          <span>45 minutes</span>
+        </div><div class="border-start ps-3">
+          <div class="small text-muted module-meta-label">
+            <i class="fa-solid fa-users me-1"></i>Primary audience
+          </div>
+          <span>Node Coordinators, Data Stewards</span>
+        </div></div>
+    </div>
+
+    <!-- Learning outcomes tab -->
+    <div class="tab-pane" id="module-meta-outcomes" role="tabpanel"><ol class="mb-0"><li class="mb-2">Describe the key elements that shape your Node context for data management</li><li class="mb-2">Identify the perspectives needed to begin developing a Node data management strategy</li><li class="mb-2">Create a simple overview of your Node context and agree on a practical way to begin</li></ol></div>
+
+  </div>
+</div>
+<p>In the previous chapter, you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.</p>
+
+<div class="example-card">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world examples</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-all-examples">All examples</a>
+    <p class="example-card-text">Use these for inspiration while you work through this chapter. The examples show how different Nodes explored their context and organised their first steps in practice.</p>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+
+<h2 id="why-the-node-context-matters">Why the Node context matters</h2>
+
+<p>A data management strategy must reflect the real situation of the Node. Each Node brings together different institutions, services, research communities, projects and national initiatives. These may have their own priorities, responsibilities, resources, ways of working and users that they serve. Without a basic understanding of this landscape, it becomes difficult to define a realistic scope, understand responsibilities or identify where coordination at Node level can add value.</p>
+
+<p>Much of the relevant work may already exist, but it can be spread across organisations, projects or teams and may not be visible to everyone. Understanding the Node context helps identify existing expertise, services and connections before deciding that something new is needed.</p>
+
+<p>A Node strategy should complement institutional, project-level and national approaches rather than replace them. The aim is not to make every organisation work in the same way, but to identify shared goals, useful connections, dependencies and areas where greater clarity or coordination is needed.</p>
+
+<p>A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-germany-fitting-the-strategy-to-a-distributed-node">ELIXIR Germany: fitting the strategy to a distributed Node</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+<div class="callout callout--note" role="alert">
+  <div class="callout__heading">Note</div>
+  <div class="callout__content">
+    <p>You do not need a complete or final overview. A simple, shared understanding is enough to get started and can be refined as roles, services and priorities change.</p>
+  </div>
+</div>
+
+<h2 id="building-a-context-overview">Building a context overview</h2>
+
+<p>Start by building a simple overview of your Node context. You do not need great detail at this stage. Focus on the elements that shape how data is managed in practice and on what may be relevant for coordination at Node level.</p>
+
+<p>Use these questions to guide your first overview.</p>
+
+<div class="callout callout--note" role="alert">
+  <div class="callout__heading">Note</div>
+  <div class="callout__content">
+    <p>This chapter takes about 45 minutes to read and get started. Finishing the full exercise usually takes longer. That’s fine, pick it back up later.</p>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Questions to guide you</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Policies, standards and wider initiatives</strong></td>
+      <td>Which institutional, national, funder or ELIXIR policies, standards, strategies and initiatives are relevant?</td>
+      <td>FAIR principles, national guidelines and the Node Service Delivery Plan</td>
+    </tr>
+    <tr>
+      <td><strong>Governance and responsibilities</strong></td>
+      <td>Who makes decisions about data management? Where are these discussed or approved? Which responsibilities sit at Node, institutional, project or service level?</td>
+      <td>Decisions made by the Node coordinator and steering group, with services managed by partner institutions</td>
+    </tr>
+    <tr>
+      <td><strong>Data and research landscape</strong></td>
+      <td>Which research domains, communities, data types and workflows are present? Are there important differences between institutions or groups?</td>
+      <td>Life sciences and clinical data managed through different institutional workflows</td>
+    </tr>
+    <tr>
+      <td><strong>Services, tools and expertise</strong></td>
+      <td>Which services, tools, training activities and areas of expertise already exist or are being developed? Who provides, uses and maintains them?</td>
+      <td>Repository, helpdesk, training programme and expertise in Data Management Plans</td>
+    </tr>
+    <tr>
+      <td><strong>Connections and dependencies</strong></td>
+      <td>How do services, teams and activities relate to each other? Where do they depend on one another or contribute to shared goals?</td>
+      <td>Two teams with different remits jointly supporting parts of the research data lifecycle</td>
+    </tr>
+    <tr>
+      <td><strong>Needs and gaps</strong></td>
+      <td>Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find?</td>
+      <td>Different levels of awareness and demand for basic and advanced RDM training</td>
+    </tr>
+    <tr>
+      <td><strong>Sustainability</strong></td>
+      <td>How are activities funded, staffed and maintained? What is stable, changing or uncertain?</td>
+      <td>Project funding, limited staff continuity or unclear long-term ownership</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-spain-understanding-the-node-rdm-landscape-and-needs">ELIXIR Spain: understanding the Node RDM landscape and needs</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-funders-fairification">Funders as drivers for FAIRification strategies</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+<div class="callout callout--tip" role="alert">
+  <div class="callout__heading">Tip</div>
+  <div class="callout__content">
+    <p>Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch.</p>
+  </div>
+</div>
+
+<div class="exercise-box">
+  <h2 id="quick-reflection-connections-and-gaps">Quick reflection: connections and gaps</h2>
+
+  <p>Using the areas above, make a rough overview of your current Node context.</p>
+
+  <p>As a starting point, reflect on:</p>
+
+  <ul>
+    <li>What already seems strong or well organised?</li>
+    <li>Which activities, services or people are already connected?</li>
+    <li>Where do activities overlap, and is this overlap useful or unnecessary?</li>
+    <li>What exists but is difficult to find, insufficiently connected or unclear in ownership?</li>
+    <li>Where are there genuine gaps in expertise, services, support or coordination?</li>
+    <li>Are there important differences between institutions, communities or user groups?</li>
+  </ul>
+
+  <p>Before describing something as a gap, check whether the activity or expertise may already exist elsewhere in the Node. Keep your notes short and practical. The goal is not completeness, but a shared understanding of what is connected, unclear or missing.</p>
+
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-germany-linking-node-strategy-services-and-activities">ELIXIR Germany: linking Node strategy, services and activities</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+<div class="callout callout--warning" role="alert">
+  <div class="callout__heading">Warning</div>
+  <div class="callout__content">
+    <p>Do not assume that something is missing simply because it is not yet visible. Check whether the activity, service or expertise already exists elsewhere in the Node.</p>
+  </div>
+</div>
+
+<h2 id="building-the-initial-team">Building the initial team</h2>
+
+<p>Once you have a basic understanding of your Node context, bring together a small group to take the work forward. Use the context overview you built earlier in this chapter to identify which perspectives are needed at the start.</p>
+
+<p>Begin with two or three people. They do not need to represent the whole Node or form the final working group. They should be able to compare different views of the Node, identify important questions or areas to explore and recognise who else needs to be involved.</p>
+
+<p>Depending on your context, useful perspectives may include:</p>
+
+<ul>
+  <li><strong>Node coordination</strong>, to connect the work with the overall direction and priorities of the Node</li>
+  <li><strong>Data stewardship or data management</strong>, to understand current practices, needs and responsibilities</li>
+  <li><strong>Services, infrastructure or technical expertise</strong>, to connect the strategy with practical activities and dependencies</li>
+  <li><strong>Training or support</strong>, to bring recurring questions and user needs into the discussion</li>
+  <li><strong>Institutions or research communities</strong>, to understand how Node activities are experienced in practice</li>
+  <li><strong>National or ELIXIR initiatives</strong>, where wider connections affect the strategy</li>
+</ul>
+
+<p>You do not need all these perspectives in the initial group. Note who is essential now, who should be consulted and who may become involved later.</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-netherlands-bringing-together-node-and-institutional-perspectives">ELIXIR Netherlands: bringing together Node and institutional perspectives</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+<div class="callout callout--note" role="alert">
+  <div class="callout__heading">Note</div>
+  <div class="callout__content">
+    <p>Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute.</p>
+  </div>
+</div>
+
+<div class="exercise-box">
+  <h2 id="quick-exercise-planning-how-to-work-together">Quick exercise: planning how to work together</h2>
+
+  <p>List the people who may contribute to developing your Node data management strategy.</p>
+
+  <p>For each person or role, mark whether they are:</p>
+
+  <ul>
+    <li><strong>Essential now</strong></li>
+    <li><strong>Useful to consult</strong></li>
+    <li><strong>Useful later</strong></li>
+  </ul>
+
+  <p>Then agree on a practical way to begin.</p>
+
+  <ol>
+    <li><strong>Plan the initial meeting</strong><br />
+Draft a simple agenda and choose two or three questions to discuss. For example:
+      <ul>
+        <li>What stands out from our Node context?</li>
+        <li>Where might coordination at Node level add value?</li>
+        <li>What do we still need to understand or discuss?</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Choose a realistic first output</strong><br />
+This could be a short summary, a first context overview or a list of questions that need further input. The initial meeting does not need to produce a complete strategy.</p>
+    </li>
+    <li><strong>Agree how you will continue</strong><br />
+Decide:
+      <ul>
+        <li>who will document the discussion and take the next step</li>
+        <li>how decisions will be made</li>
+        <li>where documents and notes will be recorded</li>
+        <li>when the group will meet or review progress again</li>
+      </ul>
+    </li>
+    <li><strong>Offer different ways to contribute</strong><br />
+Consider how people who are not part of the initial group can provide input, for example through comments in a document, an existing meeting, a survey or a separate discussion.</li>
+  </ol>
+
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card example-card--compact">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-netherlands-using-an-initial-meeting-to-identify-priorities">ELIXIR Netherlands: using an initial meeting to identify priorities</a>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+<div class="callout callout--tip" role="alert">
+  <div class="callout__heading">Tip</div>
+  <div class="callout__content">
+    <p>Keep the first step manageable. Use existing meetings, documents and working tools where possible, and agree who will capture the discussion and keep the work moving.</p>
+  </div>
+</div>
+
+<h2 id="whats-next">What’s next</h2>
+
+<p>You now have a first overview of your Node context, the main connections and gaps, and the people who can help shape the strategy. In the next chapter, you will use this overview to decide what the strategy should cover and begin structuring its content.</p>
+
+<div class="callout callout--important" role="alert">
+  <div class="callout__heading">Important</div>
+  <div class="callout__content">
+    <p>Keep your context overview and first working arrangements available for the next chapter. They are working documents that can be refined as you make choices about the strategy and involve more people.</p>
+  </div>
+</div>
+
+
+
+        
+
+        
+<h2>See it in practice</h2>
+
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  <div class="col"><div class="example-card">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-distributed-support">From distributed support to coordinated RDM services</a>
+    <p class="example-card-text">How Nodes can make distributed RDM support, responsibilities and dependencies more visible</p>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+  <div class="col"><div class="example-card">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">Real-world example</span>
+    <a class="example-card-title stretched-link" href="/ELIXIR-ELITMa/dm-example-roles-competences">Roles, competences and your Node team</a>
+    <p class="example-card-text">How to understand the expertise your Node needs and where it can come from</p>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div></div>
+</div>
+
+
+
+<nav class="module-pager module-pager--chapters" aria-label="Module chapters">
+  <p class="visually-hidden">Chapter 2 of 7</p>
+  <ol class="chapter-stepper" data-sidebar="module-data-management">
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/01-dm-intro" data-url="/ELIXIR-ELITMa/01-dm-intro" title="01 Why a Node data management strategy"><span class="visually-hidden">Chapter </span>1<span class="visually-hidden">: Why a Node data management strategy</span></a></li>
+    <li><a class="chapter-step is-current" href="/ELIXIR-ELITMa/02-dm-node-context" data-url="/ELIXIR-ELITMa/02-dm-node-context" title="02 Understanding your Node context" aria-current="step"><span class="visually-hidden">Chapter </span>2<span class="visually-hidden">: Understanding your Node context</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/03-dm-content" data-url="/ELIXIR-ELITMa/03-dm-content" title="03 What to include"><span class="visually-hidden">Chapter </span>3<span class="visually-hidden">: What to include</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/04-dm-assess" data-url="/ELIXIR-ELITMa/04-dm-assess" title="04 Assessing where you are"><span class="visually-hidden">Chapter </span>4<span class="visually-hidden">: Assessing where you are</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/05-dm-direction" data-url="/ELIXIR-ELITMa/05-dm-direction" title="05 Deciding where you want to go"><span class="visually-hidden">Chapter </span>5<span class="visually-hidden">: Deciding where you want to go</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/06-dm-plan" data-url="/ELIXIR-ELITMa/06-dm-plan" title="06 Turning direction into a plan"><span class="visually-hidden">Chapter </span>6<span class="visually-hidden">: Turning direction into a plan</span></a></li>
+    <li><a class="chapter-step" href="/ELIXIR-ELITMa/07-dm-sustain" data-url="/ELIXIR-ELITMa/07-dm-sustain" title="07 Keeping the strategy alive"><span class="visually-hidden">Chapter </span>7<span class="visually-hidden">: Keeping the strategy alive</span></a></li>
+    <li><a class="chapter-step chapter-step--finish" href="/ELIXIR-ELITMa/modules/data-management/" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li>
+  </ol>
+  <div class="module-pager-links">
+    <a class="module-pager-link module-pager-link--prev" href="/ELIXIR-ELITMa/01-dm-intro">
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Previous chapter</span>
+      <span class="module-pager-title">01 Why a Node data management strategy</span>
+    </a>
+    <a class="module-pager-link module-pager-link--next" href="/ELIXIR-ELITMa/03-dm-content">
+      <span class="module-pager-text"><span class="module-pager-label">Next chapter</span><span class="module-pager-title">03 What to include</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+  </div>
+</nav>
+
+<script>
+  // Chapter circles: remember which chapters this reader has opened (this browser only)
+  // and give those circles a ring; the trophy lights up when every chapter has been visited.
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepper = document.querySelector('.chapter-stepper[data-sidebar]');
+    if (!stepper) return;
+    var key = 'visited-' + stepper.getAttribute('data-sidebar');
+    var visited = [];
+    try { visited = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    var current = stepper.querySelector('.is-current');
+    if (current && visited.indexOf(current.getAttribute('data-url')) === -1) {
+      visited.push(current.getAttribute('data-url'));
+      try { localStorage.setItem(key, JSON.stringify(visited)); } catch (e) {}
+    }
+    var steps = stepper.querySelectorAll('.chapter-step[data-url]'), all = true;
+    steps.forEach(function (a) {
+      if (visited.indexOf(a.getAttribute('data-url')) !== -1) a.classList.add('is-visited'); else all = false;
+    });
+    if (all) stepper.querySelector('.chapter-step--finish').classList.add('is-visited');
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#content .task-list-item input[type="checkbox"]').forEach(function (cb, i) {
+      var key = 'task-' + window.location.pathname + '-' + i;
+      cb.removeAttribute('disabled');
+      try { cb.checked = localStorage.getItem(key) === 'true'; } catch (e) {}
+      cb.addEventListener('change', function () {
+        try { localStorage.setItem(key, cb.checked); } catch (e) {}
+      });
+    });
+  });
+</script>
+
+
+
+        
+
+        
+
+        
+        
+
+    </div>
+</main>
+
+        </div>
+    </div>
+    
+<button id="back-to-top" class="btn btn-primary btn-sm rounded-pill" type="button" aria-label="Back to top" onclick="topFunction()">
+    <i class="icon-arrow-up" aria-hidden="true"></i><span class="visually-hidden">Back to top</span>
+</button>
+
+    
+<footer id="footer">
+    <div class="container py-4 g-lg-5">
+        <div class="row g-4 d-flex justify-content-between">
+            <div class="col-6 col-lg-6 d-flex justify-content-lg-start">
+                <p>By the Nodes, for the Nodes.<br />
+Building ELIXIR management capacity.</p>
+
+            </div>
+            <div class="col-6 col-lg-2 d-flex justify-content-lg-center">
+                <div>
+                    <span class="footer-title">MODULES</span>
+                    <ul class="mb-0 list-unstyled">
+                        <li><a href="/ELIXIR-ELITMa/modules/governance/">Intro to ELIXIR & Governance</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/data-management/">Node data management strategy</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/strategic-management/">Strategic management</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/leading-teams/">Leading teams</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/elsi/">Legal & ethical</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/communication/">Communication</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/finance/">Finance</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/project-management/">Project management</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/impact/">Impact</a></li>
+                        <li><a href="/ELIXIR-ELITMa/modules/carbon-footprint/">Carbon footprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 d-flex justify-content-lg-end">
+                <div>
+                    <span class="footer-title">ABOUT</span>
+                    <ul class="mb-0 list-unstyled">
+                        <li><a href="/ELIXIR-ELITMa/about">About ELITMa</a></li>
+                        <li><a href="/ELIXIR-ELITMa/how-to-use">How to use ELITMa</a></li>
+                        <li><a href="/ELIXIR-ELITMa/how-to-contribute">How to contribute</a></li>
+                        <li><a href="/ELIXIR-ELITMa/site-components">Site components</a></li>
+                        <li><a href="/ELIXIR-ELITMa/contributors">See the people behind ELITMa</a></li>
+                        <li><a href="https://elixir-europe.org/platforms/training/elitma">Find out about the programme</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-4">
+        <div class="container g-lg-5 d-flex justify-content-between flex-column flex-lg-row">
+            <div class="d-flex align-items-center mb-3 mb-lg-0 mx-auto mx-lg-0 text-center"><p>Copyright notice</p>
+</div>
+            <div class="d-flex align-items-center mx-auto ms-lg-4 me-lg-0">
+                <a id="ett-logo" class="text-nowrap me-lg-5 me-xxlg-0" href="https://elixir-belgium.github.io/elixir-toolkit-theme">Built with
+                    <svg data-name="ETT logo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 77.2 77.12">
+                        <defs>
+                            <style>
+                                .cls-2,
+                                .cls-3 {
+                                    fill: #fff;
+                                    pointer-events: none;
+                                }
+
+                                .cls-2 {
+                                    opacity: 0.18;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <circle class="cls-1" cx="38.56" cy="38.56" r="38.56" />
+                            <path class="cls-2" d="M9,48.08a44.19,44.19,0,0,0,4.68,19.84A38.56,38.56,0,1,0,55.16,3.72c-.59,0-1.19-.05-1.79-.05A44.4,44.4,0,0,0,9,48.08Z" />
+                            <path class="cls-3" d="M54,20.52H13.64a.85.85,0,0,0-.84.85v34a.84.84,0,0,0,.84.84H30a.84.84,0,0,0,.85-.84V51.16a.85.85,0,0,0-.85-.85H20.07a.85.85,0,0,1-.85-.85V42a.85.85,0,0,1,.85-.84h8.66a.85.85,0,0,0,.85-.85V36.06a.85.85,0,0,0-.85-.85H20.07a.85.85,0,0,1-.85-.84V27.29a.85.85,0,0,1,.85-.85H38.26a.85.85,0,0,1,.85.85V55.38a.84.84,0,0,0,.85.84h4.73a.84.84,0,0,0,.85-.84V27.29a.85.85,0,0,1,.84-.85H61.27a.85.85,0,0,1,.84.85V55.38a.84.84,0,0,0,.85.84h4.73a.84.84,0,0,0,.85-.84V27.29a.85.85,0,0,1,.85-.85h6.77a.84.84,0,0,0,.84-.85V21.37a.84.84,0,0,0-.84-.85Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>
