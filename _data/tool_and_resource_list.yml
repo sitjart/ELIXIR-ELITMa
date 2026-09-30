@@ -267,12 +267,6 @@
   description: Recommendations for running a Node-level internal newsletter (intranet).
   category: elixir_resource
   module: mod_comm
-- id: elixir-uk-comms-strategy
-  name: ELIXIR-UK Handbook - Communications strategy
-  url: https://elixir-uk.github.io/handbook/communications-strategy
-  description: How ELIXIR-UK plans, runs and measures its communications - objectives, audiences and key messages, channels, implementation and evaluation - openly published and aligned with the ELIXIR-STEERS Node Communications Toolkit.
-  category: elixir_resource
-  module: mod_comm
 
 # --- Data management ---
 - id: ds-handbook-maturity-model

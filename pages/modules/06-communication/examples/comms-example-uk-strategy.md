@@ -7,8 +7,6 @@ page_id: comm-ex-uk-strategy
 type: Real_world_example
 back_to: mod_comm_11
 sidebar: module-communication
-ref_to_main_resources:
-  - elixir-uk-comms-strategy
 ---
 
 A communications strategy is only worth the effort if it changes what you do on Monday. ELIXIR-UK's strategy is a good example of one built to be *used*, not filed away – and because it's published openly in the [ELIXIR-UK handbook](https://elixir-uk.github.io/handbook/communications-strategy) and maintained on [GitHub](https://github.com/elixir-uk/handbook), you can read the whole thing, reuse it or suggest changes.

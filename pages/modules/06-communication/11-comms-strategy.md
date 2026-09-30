@@ -18,7 +18,6 @@ learning_outcomes:
 ref_to_main_resources:
   - steers-toolkit
   - comms-strategy
-  - elixir-uk-comms-strategy
 ---
 
 
